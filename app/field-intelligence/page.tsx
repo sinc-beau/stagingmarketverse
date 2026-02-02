@@ -128,43 +128,31 @@ function MagazineArticlesSection() {
       type: 'Strategy Archive',
       typeColor: 'purple',
       typeGradient: 'from-purple-600 via-pink-600 to-purple-600',
-      title: 'Human-Centric Growth in the Age of AI',
-      subtitle: 'Aida Kamber, VP of Growth at Mimecast',
-      description: 'Building global growth engines, LLM visibility, multi-threading buying groups, and scaling AI-powered personalization.',
-      image: '/gauravdeshpandeinterviewog.png',
-      href: '/field-intelligence/mimecast-aida-kamber',
-      featured: true
+      title: 'Human-Centric Growth in the Age of AI: What Mimecast\'s Aida Kamber Is Building for 2026',
+      subtitle: 'An interview with Aida Kamber, Vice President of Growth at Mimecast',
+      image: '/humangrowthaiworld.png',
+      href: '/field-intelligence/mimecast-aida-kamber'
     },
     {
       id: 'aerospike-gaurav-deshpande',
       type: 'Executive Briefing',
       typeColor: 'cyan',
       typeGradient: 'from-cyan-600 via-purple-600 to-cyan-600',
-      title: 'Platform Narratives & Tech Debt',
-      subtitle: 'Gaurav Deshpande, CMO at Aerospike',
-      description: 'Strategic perspectives on platform positioning, technical debt in marketing, and building category leadership.',
+      title: 'From Predictive AI to Human-Guided Scale: Inside Aerospike\'s Global Marketing Strategy',
+      subtitle: 'A conversation with Gaurav Deshpande, Chief Marketing Officer at Aerospike',
       image: '/aerospike-gaurav-deshpande.webp',
-      href: '/field-intelligence/aerospike-gaurav-deshpande',
-      featured: false
+      href: '/field-intelligence/aerospike-gaurav-deshpande'
     }
   ];
 
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-black to-pink-900 opacity-50" />
-        <div className="absolute inset-0 grid-pattern opacity-15" />
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white relative">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-            <span className="relative inline-block">
-              Latest Interviews
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 blur-sm" />
-            </span>
+          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">
+            Latest Interviews
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Deep conversations with marketing leaders on what's working now
           </p>
         </div>
@@ -176,40 +164,35 @@ function MagazineArticlesSection() {
               href={article.href}
               className="group relative block"
             >
-              <div className={`absolute -inset-1 bg-gradient-to-r ${article.typeGradient} rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500`} />
-              <div className="relative bg-black rounded-2xl border-2 border-white/10 overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.3)] group-hover:shadow-[0_0_80px_rgba(168,85,247,0.5)] transition-all duration-500 h-full flex flex-col">
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-purple-900/50 to-pink-900/50">
+              <div className="relative bg-white rounded-2xl border-2 border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                   <img
                     src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
 
                   <div className="absolute top-4 left-4">
                     <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${article.typeGradient} border border-white/20 shadow-lg`}>
-                      <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                      <div className="w-2 h-2 rounded-full bg-white" />
                       <span className="text-xs font-bold text-white uppercase tracking-wider">{article.type}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="p-8 flex-grow flex flex-col">
-                  <h3 className="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                  <h3 className="text-2xl font-black text-black mb-3 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 transition-all duration-300">
                     {article.title}
                   </h3>
 
-                  <p className="text-lg font-bold text-white/70 mb-4">
+                  <p className="text-base text-gray-600 mb-4">
                     {article.subtitle}
                   </p>
 
-                  <p className="text-sm text-white/60 leading-relaxed mb-6 flex-grow">
-                    {article.description}
-                  </p>
-
-                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                    <span className="text-sm font-bold text-white/80">Read Article</span>
-                    <ArrowRight className="w-5 h-5 text-white/80 group-hover:translate-x-2 transition-transform duration-300" />
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-200 mt-auto">
+                    <span className="text-sm font-bold text-gray-700">Read Interview</span>
+                    <ArrowRight className="w-5 h-5 text-gray-700 group-hover:translate-x-2 transition-transform duration-300" />
                   </div>
                 </div>
               </div>
@@ -218,13 +201,10 @@ function MagazineArticlesSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block relative group/more">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 rounded-xl blur opacity-40 group-hover/more:opacity-75 transition duration-500" />
-            <div className="relative bg-black border-2 border-purple-500/30 rounded-xl px-8 py-4">
-              <p className="text-base text-white/70 font-medium">
-                More interviews coming soon
-              </p>
-            </div>
+          <div className="inline-block bg-gray-100 border-2 border-gray-200 rounded-xl px-8 py-4">
+            <p className="text-base text-gray-600 font-medium">
+              More interviews coming soon
+            </p>
           </div>
         </div>
       </div>
@@ -264,7 +244,12 @@ function NewsletterSection() {
   }, []);
 
   return (
-    <section id="newsletter-section" className="py-32 bg-white relative overflow-hidden">
+    <section id="newsletter-section" className="py-32 bg-black relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-black to-pink-900 opacity-50" />
+        <div className="absolute inset-0 grid-pattern opacity-15" />
+      </div>
+
       <div className="relative max-w-4xl mx-auto px-6">
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 mb-6 shadow-lg">
@@ -272,13 +257,13 @@ function NewsletterSection() {
             <span className="text-sm font-semibold text-white uppercase tracking-wider">Stay Informed</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             <span className="relative inline-block">
               Get Notified About New Interviews
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 blur-sm" />
             </span>
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Be the first to read unfiltered insights from marketing leaders. New interviews released regularly.
           </p>
         </div>
