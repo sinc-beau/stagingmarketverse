@@ -220,16 +220,6 @@ export default function MimecastInterview() {
             <div className="my-16 relative">
               <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="AI and Content Strategy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="my-16 relative">
-              <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
-                <img
                   src="/platformnarratives.png"
                   alt="Platform Narratives"
                   className="w-full h-full object-cover"

@@ -53,12 +53,6 @@ export function Navigation() {
               Home
             </Link>
             <Link
-              href="/marketing-forum-las-vegas-2026"
-              className="text-slate-300 hover:text-white transition-colors font-bold"
-            >
-              Marketverse Forum (Oct 11-13)
-            </Link>
-            <Link
               href="/cmo-circle"
               className="text-slate-300 hover:text-white transition-colors font-bold"
             >
@@ -96,13 +90,6 @@ export function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               Home
-            </Link>
-            <Link
-              href="/marketing-forum-las-vegas-2026"
-              className="block text-slate-300 hover:text-white transition-colors font-bold py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Marketverse Forum (Oct 11-13)
             </Link>
             <Link
               href="/cmo-circle"
