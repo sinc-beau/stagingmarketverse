@@ -90,17 +90,17 @@ export default function MimecastInterview() {
       </Dialog>
 
       <article className="pt-20">
-        <div className="max-w-[1200px] mx-auto px-8 mt-16">
-          <div className="text-[#9a33df] uppercase text-[13px] tracking-[2px] font-semibold mb-5">
+        <div className="max-w-[1200px] mx-auto px-8 mt-20">
+          <div className="text-[#9a33df] uppercase text-[13px] tracking-[2px] font-semibold mb-8">
             Field Intelligence
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-black max-w-4xl">
+          <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] mb-10 text-black max-w-4xl">
             Human-Centric Growth in the Age of AI: What Mimecast's Aida Kamber Is Building for 2026
           </h1>
-          <p className="text-[22px] text-[#4a4a4a] leading-[1.5] mb-9 font-normal max-w-3xl">
+          <p className="text-[22px] text-[#4a4a4a] leading-[1.5] mb-12 font-normal max-w-3xl">
             An interview with Aida Kamber, Vice President of Growth at Mimecast
           </p>
-          <div className="flex items-center gap-5 mb-12 pb-8 border-b border-[#e5e5e5]">
+          <div className="flex items-center gap-5 mb-16 pb-10 border-b border-[#e5e5e5]">
             <span className="text-sm text-[#666]">
               Interviewed by <strong className="text-black">Beau Horton, VP of Marketing at SINC USA, and Jared Bral, VP of Marketverse & CDAIO Division</strong>
             </span>
@@ -569,7 +569,7 @@ export default function MimecastInterview() {
             <div className="my-16 relative">
               <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/networkingevent.png"
                   alt="Marketing Technology Stack"
                   className="w-full h-full object-cover"
                 />
