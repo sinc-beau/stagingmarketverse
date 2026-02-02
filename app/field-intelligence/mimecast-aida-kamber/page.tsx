@@ -338,7 +338,7 @@ export default function MimecastInterview() {
             <div className="my-16 relative">
               <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/networkingevent.png"
                   alt="Customer Events and Experiences"
                   className="w-full h-full object-cover"
                 />
@@ -569,7 +569,7 @@ export default function MimecastInterview() {
             <div className="my-16 relative">
               <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="/networkingevent.png"
+                  src="/techdebt.png"
                   alt="Marketing Technology Stack"
                   className="w-full h-full object-cover"
                 />
