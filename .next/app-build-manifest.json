@@ -31,6 +31,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/field-intelligence/mimecast-aida-kamber/layout.js"
     ],
+    "/cmo-circle/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cmo-circle/page.js"
+    ],
+    "/cmo-circle/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/cmo-circle/layout.js"
+    ],
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

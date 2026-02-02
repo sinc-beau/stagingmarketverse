@@ -2,5 +2,6 @@
   "/not-found": "app/not-found.js",
   "/page": "app/page.js",
   "/field-intelligence/page": "app/field-intelligence/page.js",
+  "/cmo-circle/page": "app/cmo-circle/page.js",
   "/field-intelligence/mimecast-aida-kamber/page": "app/field-intelligence/mimecast-aida-kamber/page.js"
 }
