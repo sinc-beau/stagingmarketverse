@@ -114,7 +114,7 @@ export default function MimecastInterview() {
             <div className="relative">
               <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/humangrowthaiworld.png"
                   alt="Aida Kamber, Vice President of Growth at Mimecast"
                   className="w-full h-full object-cover"
                 />
