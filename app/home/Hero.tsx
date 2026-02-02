@@ -60,13 +60,6 @@ export default function Hero({ onJoinClick }: HeroProps) {
               <span>Join Marketverse</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
-            <a
-              href="/marketing-forum-las-vegas-2026"
-              className="group px-8 py-4 bg-purple-600 text-white font-bold rounded-xl hover:bg-purple-700 hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] transition-all duration-200 flex items-center gap-2 border-2 border-purple-400/30"
-            >
-              <span>Register for Vegas Forum</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 pt-12 sm:pt-16 max-w-5xl mx-auto px-2">
