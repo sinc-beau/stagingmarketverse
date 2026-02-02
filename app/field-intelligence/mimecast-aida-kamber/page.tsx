@@ -227,6 +227,16 @@ export default function MimecastInterview() {
               </div>
             </div>
 
+            <div className="my-16 relative">
+              <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
+                <img
+                  src="/platformnarratives.png"
+                  alt="Platform Narratives"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             <h2 className="text-3xl font-bold text-black mt-20 mb-8 pb-4 border-b-2 border-[#d52884]">
               Use cases convert, platform narratives don't (how to sequence your story)
             </h2>
