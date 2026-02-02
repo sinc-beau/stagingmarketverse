@@ -69,13 +69,13 @@ function HeroSection() {
               <span className="text-sm font-bold text-cyan-300 uppercase tracking-wider">Latest Interview</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-black text-white mb-4 text-left">
-              From Predictive AI to Human-Guided Scale
+              Human-Centric Growth in the Age of AI
             </h3>
             <p className="text-lg text-white/80 mb-6 text-left">
-              A conversation with Gaurav Deshpande, CMO at Aerospike, on real-time data, AI-powered marketing, and the balance between human innovation and scaled automation.
+              A conversation with Aida Kamber, VP of Growth at Mimecast, on building global growth engines, LLM visibility, multi-threading buying groups, and scaling AI-powered personalization.
             </p>
             <a
-              href="/field-intelligence/aerospike-gaurav-deshpande"
+              href="/field-intelligence/mimecast-aida-kamber"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-cyan-600 text-white font-bold rounded-xl hover:shadow-[0_0_40px_rgba(6,182,212,0.8)] hover:scale-105 transition-all duration-300"
             >
               <span>Read Now</span>
@@ -241,19 +241,33 @@ function ContentTypesSection() {
                     {type.details}
                   </p>
 
-                  {type.id === 'executive-briefings' ? (
-                    <a
-                      href="/field-intelligence/aerospike-gaurav-deshpande"
-                      className="relative group/inner block"
-                    >
-                      <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
-                      <div className={`relative bg-gradient-to-r ${type.gradient} rounded-xl p-4 border ${type.borderColor} group-hover/inner:scale-105 transition-transform duration-300`}>
-                        <p className="text-sm text-white font-bold text-center flex items-center justify-center gap-2">
-                          Read Latest Interview
-                          <ArrowRight className="w-4 h-4 group-hover/inner:translate-x-1 transition-transform" />
-                        </p>
-                      </div>
-                    </a>
+                  {type.id === 'strategy-archives' ? (
+                    <div className="space-y-3">
+                      <a
+                        href="/field-intelligence/mimecast-aida-kamber"
+                        className="relative group/inner block"
+                      >
+                        <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
+                        <div className={`relative bg-gradient-to-r ${type.gradient} rounded-xl p-4 border ${type.borderColor} group-hover/inner:scale-105 transition-transform duration-300`}>
+                          <p className="text-sm text-white font-bold text-center flex items-center justify-center gap-2">
+                            Mimecast: Aida Kamber
+                            <ArrowRight className="w-4 h-4 group-hover/inner:translate-x-1 transition-transform" />
+                          </p>
+                        </div>
+                      </a>
+                      <a
+                        href="/field-intelligence/aerospike-gaurav-deshpande"
+                        className="relative group/inner block"
+                      >
+                        <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
+                        <div className={`relative bg-gradient-to-r ${type.gradient} rounded-xl p-4 border ${type.borderColor} group-hover/inner:scale-105 transition-transform duration-300`}>
+                          <p className="text-sm text-white font-bold text-center flex items-center justify-center gap-2">
+                            Aerospike: Gaurav Deshpande
+                            <ArrowRight className="w-4 h-4 group-hover/inner:translate-x-1 transition-transform" />
+                          </p>
+                        </div>
+                      </a>
+                    </div>
                   ) : (
                     <div className="relative group/inner">
                       <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
