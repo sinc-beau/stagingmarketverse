@@ -50,6 +50,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/sponsor-marketing-events/layout.js"
+    ],
+    "/field-intelligence/aerospike-gaurav-deshpande/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/field-intelligence/aerospike-gaurav-deshpande/page.js"
+    ],
+    "/field-intelligence/aerospike-gaurav-deshpande/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/field-intelligence/aerospike-gaurav-deshpande/layout.js"
     ]
   }
 }
