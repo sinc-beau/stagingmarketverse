@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Terminal, Zap, FileText, Users, TrendingUp, Mail, ArrowRight } from 'lucide-react';
+import { Terminal, Zap, FileText, Users, TrendingUp, Mail, ArrowRight, Book } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Navigation } from '@/components/Navigation';
@@ -17,23 +17,16 @@ export default function FieldIntelligencePage() {
     <div className="min-h-screen bg-black">
       <Navigation />
       <HeroSection />
-      <DescriptionSection />
-      <ContentTypesSection />
+      <ContentTypesLegend />
+      <MagazineArticlesSection />
       <NewsletterSection />
     </div>
   );
 }
 
 function HeroSection() {
-  const scrollToNewsletter = () => {
-    const element = document.getElementById('newsletter-section');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+    <section className="min-h-[60vh] flex items-center justify-center bg-black relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-black to-pink-900" />
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,_#ec4899_0%,_transparent_50%)]" />
@@ -41,11 +34,11 @@ function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-40" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 text-center py-20 z-10">
+      <div className="relative max-w-7xl mx-auto px-6 text-center py-20 z-10">
         <div className="inline-block mb-8">
           <div className="flex items-center gap-2 px-6 py-2 rounded-full bg-black border border-purple-500/50 shadow-[0_0_20px_rgba(168,85,247,0.4)]">
-            <Terminal className="w-4 h-4 text-purple-400" />
-            <span className="text-sm font-semibold text-purple-300 uppercase tracking-wider">Field Knowledge</span>
+            <Book className="w-4 h-4 text-purple-400" />
+            <span className="text-sm font-semibold text-purple-300 uppercase tracking-wider">Knowledge Archive</span>
             <Zap className="w-4 h-4 text-pink-400" />
           </div>
         </div>
@@ -57,132 +50,102 @@ function HeroSection() {
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-bold mb-12">
+        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-bold">
           Unfiltered insights from leaders who are doing the work
         </p>
-
-        <div className="relative group inline-block mb-8 max-w-4xl">
-          <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition duration-500" />
-          <div className="relative bg-black rounded-2xl p-8 border-2 border-purple-500/50 shadow-[0_0_40px_rgba(168,85,247,0.4)]">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse" />
-              <span className="text-sm font-bold text-cyan-300 uppercase tracking-wider">Latest Interview</span>
-            </div>
-            <h3 className="text-3xl md:text-4xl font-black text-white mb-4 text-left">
-              Human-Centric Growth in the Age of AI
-            </h3>
-            <p className="text-lg text-white/80 mb-6 text-left">
-              A conversation with Aida Kamber, VP of Growth at Mimecast, on building global growth engines, LLM visibility, multi-threading buying groups, and scaling AI-powered personalization.
-            </p>
-            <a
-              href="/field-intelligence/mimecast-aida-kamber"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-600 via-purple-600 to-cyan-600 text-white font-bold rounded-xl hover:shadow-[0_0_40px_rgba(6,182,212,0.8)] hover:scale-105 transition-all duration-300"
-            >
-              <span>Read Now</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
 }
 
-function DescriptionSection() {
-  return (
-    <section className="py-24 bg-gray-50 relative">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">
-            What We're Building
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Real insights from real leaders, packaged for maximum impact
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-purple-500 transition-all duration-300">
-            <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-              <Users className="w-8 h-8 text-purple-600" />
-            </div>
-            <h3 className="text-2xl font-black text-black mb-4 tracking-tight">
-              Interview Leaders
-            </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-              We're going out and conducting interviews with marketing leaders who are actively executing in Growth, Demand Gen, and Field Marketing.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-pink-500 transition-all duration-300">
-            <div className="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-6">
-              <FileText className="w-8 h-8 text-pink-600" />
-            </div>
-            <h3 className="text-2xl font-black text-black mb-4 tracking-tight">
-              Capture Insights
-            </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-              Our goal is to capture their real-world insights, strategies, and tactical approaches focused on the topics that matter most.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-gray-200 hover:border-cyan-500 transition-all duration-300">
-            <div className="w-16 h-16 bg-cyan-100 rounded-xl flex items-center justify-center mb-6">
-              <TrendingUp className="w-8 h-8 text-cyan-600" />
-            </div>
-            <h3 className="text-2xl font-black text-black mb-4 tracking-tight">
-              Easy to Digest
-            </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-              Unfiltered perspectives packaged for quick consumption, from leaders who are doing the work every day.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ContentTypesSection() {
+function ContentTypesLegend() {
   const contentTypes = [
     {
       id: 'strategy-archives',
-      badge: 'Executive Series',
       title: 'Strategy Archives',
-      description: 'Interviews with demand and growth leaders',
-      details: 'Short-form interviews with Demand Gen leaders and CMOs sharing what\'s working right now. Unfiltered perspectives on strategies, tactics, and real results.',
+      description: 'Short-form interviews with Demand Gen leaders and CMOs sharing what\'s working right now.',
       gradient: 'from-purple-600 via-pink-600 to-purple-600',
-      borderColor: 'border-purple-500/30',
-      shadowColor: 'rgba(168,85,247,0.3)',
-      badgeColor: 'border-purple-500/50 text-purple-300',
-      accentColor: 'text-purple-400',
-      icon: TrendingUp
-    },
-    {
-      id: 'field-intel-reports',
-      badge: 'Practitioner Series',
-      title: 'Field Intel Reports',
-      description: 'Interviews with field marketing leaders',
-      details: 'Real stories and hard-won lessons from field marketing professionals in the trenches. Practical insights on events, ABM campaigns, and regional execution.',
-      gradient: 'from-pink-600 via-purple-600 to-pink-600',
-      borderColor: 'border-pink-500/30',
-      shadowColor: 'rgba(236,72,153,0.3)',
-      badgeColor: 'border-pink-500/50 text-pink-300',
-      accentColor: 'text-pink-400',
-      icon: Users
+      icon: TrendingUp,
+      color: 'purple'
     },
     {
       id: 'executive-briefings',
-      badge: 'C-Suite Series',
       title: 'Executive Briefings',
-      description: 'C-Suite content from CMOs of leading B2B tech companies',
-      details: 'Strategic insights and forward-thinking perspectives from CMOs at the helm of leading B2B technology companies. High-level vision, market trends, and the future of marketing.',
+      description: 'Strategic insights and forward-thinking perspectives from CMOs at leading B2B tech companies.',
       gradient: 'from-cyan-600 via-purple-600 to-cyan-600',
-      borderColor: 'border-cyan-500/30',
-      shadowColor: 'rgba(6,182,212,0.3)',
-      badgeColor: 'border-cyan-500/50 text-cyan-300',
-      accentColor: 'text-cyan-400',
-      icon: FileText
+      icon: FileText,
+      color: 'cyan'
+    },
+    {
+      id: 'field-intel-reports',
+      title: 'Field Intel Reports',
+      description: 'Real stories from field marketing professionals in the trenches.',
+      gradient: 'from-pink-600 via-purple-600 to-pink-600',
+      icon: Users,
+      color: 'pink'
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-gray-50 relative">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-black text-black mb-3 tracking-tight">
+            Content Types
+          </h2>
+          <p className="text-lg text-gray-600">
+            Our content is organized into three distinct series
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {contentTypes.map((type) => {
+            const Icon = type.icon;
+            return (
+              <div key={type.id} className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                <div className={`w-12 h-12 bg-gradient-to-r ${type.gradient} rounded-lg flex items-center justify-center mb-4`}>
+                  <Icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-black text-black mb-2 tracking-tight">
+                  {type.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {type.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MagazineArticlesSection() {
+  const articles = [
+    {
+      id: 'mimecast-aida-kamber',
+      type: 'Strategy Archive',
+      typeColor: 'purple',
+      typeGradient: 'from-purple-600 via-pink-600 to-purple-600',
+      title: 'Human-Centric Growth in the Age of AI',
+      subtitle: 'Aida Kamber, VP of Growth at Mimecast',
+      description: 'Building global growth engines, LLM visibility, multi-threading buying groups, and scaling AI-powered personalization.',
+      image: '/gauravdeshpandeinterviewog.png',
+      href: '/field-intelligence/mimecast-aida-kamber',
+      featured: true
+    },
+    {
+      id: 'aerospike-gaurav-deshpande',
+      type: 'Executive Briefing',
+      typeColor: 'cyan',
+      typeGradient: 'from-cyan-600 via-purple-600 to-cyan-600',
+      title: 'Platform Narratives & Tech Debt',
+      subtitle: 'Gaurav Deshpande, CMO at Aerospike',
+      description: 'Strategic perspectives on platform positioning, technical debt in marketing, and building category leadership.',
+      image: '/aerospike-gaurav-deshpande.webp',
+      href: '/field-intelligence/aerospike-gaurav-deshpande',
+      featured: false
     }
   ];
 
@@ -197,91 +160,72 @@ function ContentTypesSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             <span className="relative inline-block">
-              Content Series
+              Latest Interviews
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 blur-sm" />
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Three distinct series delivering tactical insights from marketing leaders
+            Deep conversations with marketing leaders on what's working now
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {contentTypes.map((type, index) => {
-            const Icon = type.icon;
-            return (
-              <div key={type.id} className="group relative">
-                <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500`} />
-                <div className={`relative bg-black rounded-2xl p-8 border-2 ${type.borderColor} shadow-[0_0_50px_${type.shadowColor}] group-hover:shadow-[0_0_80px_${type.shadowColor}] transition-all duration-500 h-full flex flex-col`}>
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-bl-[2rem] border-l-2 border-b-2 border-purple-500/30" />
-                  <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-purple-400 rounded-tl" />
-                  <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-pink-400 rounded-br" />
+        <div className="grid lg:grid-cols-2 gap-8">
+          {articles.map((article) => (
+            <a
+              key={article.id}
+              href={article.href}
+              className="group relative block"
+            >
+              <div className={`absolute -inset-1 bg-gradient-to-r ${article.typeGradient} rounded-2xl blur-lg opacity-40 group-hover:opacity-75 transition duration-500`} />
+              <div className="relative bg-black rounded-2xl border-2 border-white/10 overflow-hidden shadow-[0_0_50px_rgba(168,85,247,0.3)] group-hover:shadow-[0_0_80px_rgba(168,85,247,0.5)] transition-all duration-500 h-full flex flex-col">
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-purple-900/50 to-pink-900/50">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
-                  <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black border ${type.badgeColor} mb-4 shadow-[0_0_15px_${type.shadowColor}] w-fit`}>
-                    <div className={`w-2 h-2 rounded-full ${type.accentColor.replace('text-', 'bg-')} animate-pulse`} />
-                    <span className="text-xs font-semibold uppercase tracking-wider">{type.badge}</span>
+                  <div className="absolute top-4 left-4">
+                    <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${article.typeGradient} border border-white/20 shadow-lg`}>
+                      <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                      <span className="text-xs font-bold text-white uppercase tracking-wider">{article.type}</span>
+                    </div>
                   </div>
+                </div>
 
-                  <div className="mb-4">
-                    <Icon className={`w-12 h-12 ${type.accentColor} mb-4`} />
-                  </div>
-
-                  <h3 className="text-3xl font-black text-white mb-3 tracking-tight relative">
-                    <span className="relative inline-block">
-                      {type.title}
-                      <div className={`absolute -bottom-1 left-0 w-full h-px bg-gradient-to-r ${type.gradient}`} />
-                    </span>
+                <div className="p-8 flex-grow flex flex-col">
+                  <h3 className="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                    {article.title}
                   </h3>
 
-                  <p className="text-base text-white/80 font-semibold mb-4">
-                    {type.description}
+                  <p className="text-lg font-bold text-white/70 mb-4">
+                    {article.subtitle}
                   </p>
 
-                  <p className="text-sm text-white/70 leading-relaxed mb-6 flex-grow">
-                    {type.details}
+                  <p className="text-sm text-white/60 leading-relaxed mb-6 flex-grow">
+                    {article.description}
                   </p>
 
-                  {type.id === 'strategy-archives' ? (
-                    <div className="space-y-3">
-                      <a
-                        href="/field-intelligence/mimecast-aida-kamber"
-                        className="relative group/inner block"
-                      >
-                        <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
-                        <div className={`relative bg-gradient-to-r ${type.gradient} rounded-xl p-4 border ${type.borderColor} group-hover/inner:scale-105 transition-transform duration-300`}>
-                          <p className="text-sm text-white font-bold text-center flex items-center justify-center gap-2">
-                            Mimecast: Aida Kamber
-                            <ArrowRight className="w-4 h-4 group-hover/inner:translate-x-1 transition-transform" />
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                        href="/field-intelligence/aerospike-gaurav-deshpande"
-                        className="relative group/inner block"
-                      >
-                        <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
-                        <div className={`relative bg-gradient-to-r ${type.gradient} rounded-xl p-4 border ${type.borderColor} group-hover/inner:scale-105 transition-transform duration-300`}>
-                          <p className="text-sm text-white font-bold text-center flex items-center justify-center gap-2">
-                            Aerospike: Gaurav Deshpande
-                            <ArrowRight className="w-4 h-4 group-hover/inner:translate-x-1 transition-transform" />
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                  ) : (
-                    <div className="relative group/inner">
-                      <div className={`absolute -inset-1 bg-gradient-to-r ${type.gradient} rounded-xl blur opacity-30 group-hover/inner:opacity-60 transition duration-500`} />
-                      <div className={`relative bg-black/50 rounded-xl p-4 border ${type.borderColor}`}>
-                        <p className="text-xs text-white/60 text-center font-medium">
-                          Content coming December 5, 2025
-                        </p>
-                      </div>
-                    </div>
-                  )}
+                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                    <span className="text-sm font-bold text-white/80">Read Article</span>
+                    <ArrowRight className="w-5 h-5 text-white/80 group-hover:translate-x-2 transition-transform duration-300" />
+                  </div>
                 </div>
               </div>
-            );
-          })}
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <div className="inline-block relative group/more">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 rounded-xl blur opacity-40 group-hover/more:opacity-75 transition duration-500" />
+            <div className="relative bg-black border-2 border-purple-500/30 rounded-xl px-8 py-4">
+              <p className="text-base text-white/70 font-medium">
+                More interviews coming soon
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
