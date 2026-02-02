@@ -420,16 +420,6 @@ export default function MimecastInterview() {
               </div>
             </div>
 
-            <div className="my-16 relative">
-              <div className="h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
-                <img
-                  src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Multi-threading and Personalization"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
             <p className="text-[17px] leading-[1.8] text-[#333] mb-9">
               The tool can look at Gong call transcripts from closed-lost opportunities to identify the buying group, then generate different narratives for each persona. "It allows us to have a different narrative for each one of them based on their use case and pain points. And she's empathetic about the philosophy: this is not BDR replacement.
             </p>
