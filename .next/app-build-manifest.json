@@ -40,6 +40,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/cmo-circle/layout.js"
+    ],
+    "/sponsor-marketing-events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sponsor-marketing-events/page.js"
+    ],
+    "/sponsor-marketing-events/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sponsor-marketing-events/layout.js"
     ]
   }
 }
