@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: 'https://marketverse.org/mimecast-aida-kamber-og.png',
-        secureUrl: 'https://marketverse.org/mimecast-aida-kamber-og.png',
+        url: 'https://marketverse.org/aidakamberog.png',
+        secureUrl: 'https://marketverse.org/aidakamberog.png',
         width: 1200,
         height: 630,
         alt: 'Aida Kamber, Vice President of Growth at Mimecast',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Aida Kamber, Mimecast VP of Growth: Human-Centric Growth in the Age of AI',
     description: 'Mimecast VP of Growth Aida Kamber on building global growth engines, LLM visibility, multi-threading buying groups, and scaling AI-powered personalization.',
-    images: ['https://marketverse.org/mimecast-aida-kamber-og.png'],
+    images: ['https://marketverse.org/aidakamberog.png'],
   },
 };
 
