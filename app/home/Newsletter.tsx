@@ -147,27 +147,6 @@ const Newsletter = forwardRef<NewsletterModalRef, NewsletterProps>(({}, ref) => 
               Unsubscribe anytime
             </span>
           </div>
-
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border-2 border-purple-500/20 shadow-[0_0_20px_rgba(168,85,247,0.2)] hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-300">
-              <div className="text-3xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                2x
-              </div>
-              <p className="text-gray-400 text-sm font-medium">Monthly insights</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border-2 border-pink-500/20 shadow-[0_0_20px_rgba(236,72,153,0.2)] hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] transition-all duration-300">
-              <div className="text-3xl font-black bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                0%
-              </div>
-              <p className="text-gray-400 text-sm font-medium">Sales pitches</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-sm border-2 border-cyan-500/20 shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all duration-300">
-              <div className="text-3xl font-black bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">
-                100%
-              </div>
-              <p className="text-gray-400 text-sm font-medium">Relevant content</p>
-            </div>
-          </div>
         </div>
       </div>
 
