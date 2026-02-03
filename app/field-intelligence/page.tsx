@@ -75,7 +75,7 @@ function MagazineArticlesSection() {
       typeGradient: 'from-cyan-600 via-purple-600 to-cyan-600',
       title: 'From Predictive AI to Human-Guided Scale: Inside Aerospike\'s Global Marketing Strategy',
       subtitle: 'A conversation with Gaurav Deshpande, Chief Marketing Officer at Aerospike',
-      image: '/aerospike-gaurav-deshpande.webp',
+      image: '/predictivehumanscale.png',
       href: '/field-intelligence/aerospike-gaurav-deshpande'
     }
   ];
