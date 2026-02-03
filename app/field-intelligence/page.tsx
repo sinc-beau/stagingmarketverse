@@ -1,9 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { Terminal, Zap, FileText, Users, TrendingUp, Mail, ArrowRight, Book } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import React, { useEffect } from 'react';
+import { Zap, Mail, ArrowRight, Book } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 
 declare global {
@@ -17,7 +15,6 @@ export default function FieldIntelligencePage() {
     <div className="min-h-screen bg-black">
       <Navigation />
       <HeroSection />
-      <ContentTypesLegend />
       <MagazineArticlesSection />
       <NewsletterSection />
     </div>
@@ -58,68 +55,6 @@ function HeroSection() {
   );
 }
 
-function ContentTypesLegend() {
-  const contentTypes = [
-    {
-      id: 'strategy-archives',
-      title: 'Strategy Archives',
-      description: 'Short-form interviews with Demand Gen leaders and CMOs sharing what\'s working right now.',
-      gradient: 'from-purple-600 via-pink-600 to-purple-600',
-      icon: TrendingUp,
-      color: 'purple'
-    },
-    {
-      id: 'executive-briefings',
-      title: 'Executive Briefings',
-      description: 'Strategic insights and forward-thinking perspectives from CMOs at leading B2B tech companies.',
-      gradient: 'from-cyan-600 via-purple-600 to-cyan-600',
-      icon: FileText,
-      color: 'cyan'
-    },
-    {
-      id: 'field-intel-reports',
-      title: 'Field Intel Reports',
-      description: 'Real stories from field marketing professionals in the trenches.',
-      gradient: 'from-pink-600 via-purple-600 to-pink-600',
-      icon: Users,
-      color: 'pink'
-    }
-  ];
-
-  return (
-    <section className="py-16 bg-gray-50 relative">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-black mb-3 tracking-tight">
-            Content Types
-          </h2>
-          <p className="text-lg text-gray-600">
-            Our content is organized into three distinct series
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {contentTypes.map((type) => {
-            const Icon = type.icon;
-            return (
-              <div key={type.id} className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-                <div className={`w-12 h-12 bg-gradient-to-r ${type.gradient} rounded-lg flex items-center justify-center mb-4`}>
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-black text-black mb-2 tracking-tight">
-                  {type.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {type.description}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function MagazineArticlesSection() {
   const articles = [
