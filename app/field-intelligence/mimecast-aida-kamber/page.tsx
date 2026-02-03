@@ -134,25 +134,6 @@ export default function MimecastInterview() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-[#9a33df]/5 via-[#d52884]/5 to-transparent py-20 mb-20">
-          <div className="max-w-[1200px] mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg border border-[#9a33df]/20">
-                <div className="text-4xl font-bold text-[#9a33df] mb-2">33%</div>
-                <div className="text-sm text-[#666]">increase in clicks from AI-powered translation</div>
-              </div>
-              <div className="bg-white p-8 rounded-lg shadow-lg border border-[#d52884]/20">
-                <div className="text-4xl font-bold text-[#d52884] mb-2">100%</div>
-                <div className="text-sm text-[#666]">opportunity influence target for marketing</div>
-              </div>
-              <div className="bg-white p-8 rounded-lg shadow-lg border border-[#9a33df]/20">
-                <div className="text-4xl font-bold text-[#9a33df] mb-2">5</div>
-                <div className="text-sm text-[#666]">personas in multi-threaded buying groups</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="max-w-[900px] mx-auto px-8 pb-20">
           <div className="prose prose-lg max-w-none">
             <p className="text-[17px] leading-[1.8] text-[#333] mb-9">
