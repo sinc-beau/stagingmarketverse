@@ -35,7 +35,7 @@ export default function ContentSeries() {
       dotColor: 'bg-cyan-400',
       textColor: 'text-cyan-300',
       accentColor: 'text-cyan-400',
-      image: '/aerospike-gaurav-deshpande.webp',
+      image: '/predictivehumanscale.png',
       href: '/field-intelligence/aerospike-gaurav-deshpande',
       icon: FileText
     }
